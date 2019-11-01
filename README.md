@@ -15,6 +15,9 @@ This creates a linux environment to compile cpp programs. The distro is ubuntu a
 It have current libraries installed
 - Boost
 
+
+
+
 ```
 ENV BOOST_VERSION - defines which version of Boost that the image will use.
 ```
