@@ -16,17 +16,14 @@ It have current libraries installed
 - Boost
 
 
-###
-
-```
-ENV BOOST_VERSION - defines which version of Boost that the image will use.
-```
-
 The image have
 ```
 ENTRYPOINT /bin/bash
 ```
 if it's needed to inspect the container.
+
+**ENV BOOST_VERSION** - defines which version of Boost that the image will use.
+
 
 ### run
 
