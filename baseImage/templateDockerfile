@@ -1,0 +1,8 @@
+FROM basecpp:latest as builder
+COPY . /usr/src/test
+WORKDIR /usr/src/test
+RUN make
+
+FROM gcr.io/distroless/cc
+COPY --from=builder /usr/src/test/run /home/cpp/run
+ENTRYPOINT ["/home/cpp/run"]
